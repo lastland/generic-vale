@@ -1,0 +1,34 @@
+[
+  "_d,\b„\u0007’\tõ\\ÎÖ\u0007\r©E",
+  [
+    [
+      "QuickCodes.regs_list_match",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "binder_x_888e8e5eca733c62ad7e0070025f18c9_4",
+        "disc_equation_Prims.Cons", "disc_equation_Prims.Nil",
+        "equality_tok_Prims.LexTop@tok", "fuel_guarded_inversion_Prims.list",
+        "subterm_ordering_Prims.Cons"
+      ],
+      0,
+      "38ab93028e33e3100bdffb4700360823"
+    ],
+    [
+      "QuickCodes.regs_class_match",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "binder_x_493c370f6dc5c7a568b6f8abe9efd949_3",
+        "disc_equation_Prims.Cons", "disc_equation_Prims.Nil",
+        "fuel_guarded_inversion_Prims.list", "subterm_ordering_Prims.Cons"
+      ],
+      0,
+      "6608f81ce18cd184deb36e32c0eec33d"
+    ]
+  ]
+]
