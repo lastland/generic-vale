@@ -23,7 +23,7 @@
         "subterm_ordering_Prims.Cons"
       ],
       0,
-      "12152280853230644c628808b271ba79"
+      "673c6fe6026d6332b87ef5e5bd7f1346"
     ],
     [
       "QuickCodes.lemma_regs_list_match",
@@ -93,9 +93,10 @@
       [
         "@MaxIFuel_assumption", "@query",
         "Prims_pretyping_ae567c2fb75be05905677af440075565",
-        "equation_Prims.nat", "equation_Prims.pos", "equation_Regs.reg_t",
+        "equation_FStar.FunctionalExtensionality.feq", "equation_Prims.nat",
+        "equation_Prims.pos", "equation_Regs.equal1", "equation_Regs.reg_t",
         "function_token_typing_Regs.n_reg_t", "int_inversion",
-        "lemma_Regs.lemma_equal1_elim", "lemma_Regs.lemma_equal1_intro",
+        "lemma_Regs.lemma_equal1_elim",
         "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
         "refinement_interpretation_Prims_Tm_refine_f048236b5f8051f83b495ea5eaa6127b",
         "refinement_interpretation_QuickCodes_Tm_refine_dbd90603508ce983587c738d6b68872e",

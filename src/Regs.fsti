@@ -1,6 +1,7 @@
 module Regs
 
 open FStar.List
+open FStar.FunctionalExtensionality
 open Util
 
 val n_reg_t : pos
@@ -38,26 +39,30 @@ val regval : reg_t -> Type0
 
 type regmap = t:reg_t -> regtyp t -> regval t
 
-val equal1 : #t:reg_t -> (regtyp t -> regval t) -> (regtyp t -> regval t) -> Type0
+let equal1 (#t:reg_t)(regs1:regtyp t -> regval t)(regs2:regtyp t -> regval t) : Type0 =
+	feq regs1 regs2
 
-val equal : regmap -> regmap -> Type0
+let equal (regs1:regmap)(regs2:regmap) : Type0 =
+	forall t. equal1 #t (regs1 t) (regs2 t)
 
-val lemma_equal1_intro : t:reg_t -> regs1:regmap -> regs2:regmap -> Lemma
+let lemma_equal1_intro : t:reg_t -> regs1:regmap -> regs2:regmap -> Lemma
   (requires forall r. regs1 t r == regs2 t r)
   (ensures equal1 (regs1 t) (regs2 t))
-  [SMTPat (equal1 (regs1 t) (regs2 t))]
+  [SMTPat (equal1 (regs1 t) (regs2 t))] = fun _ _ _ -> ()
 
-val lemma_equal1_elim : t:reg_t -> regs1:regmap -> regs2:regmap -> Lemma
-  (requires equal1 (regs1 t) (regs2 t))
+let lemma_equal1_elim : t:reg_t -> regs1:regmap -> regs2:regmap -> Lemma
+  (requires equal1 #t (regs1 t) (regs2 t))
   (ensures regs1 t == regs2 t)
-  [SMTPat (equal1 (regs1 t) (regs2 t))]
+  [SMTPat (equal1 (regs1 t) (regs2 t))] = fun _ _ _ -> ()
 
-val lemma_equal_intro : regs1:regmap -> regs2:regmap -> Lemma
+let lemma_equal_intro : regs1:regmap -> regs2:regmap -> Lemma
   (requires forall t. regs1 t == regs2 t)
   (ensures equal regs1 regs2)
-  [SMTPat (equal regs1 regs2)]
+  [SMTPat (equal regs1 regs2)] = fun _ _ -> ()
 
-val lemma_equal_elim : regs1:regmap -> regs2:regmap -> Lemma
+let lemma_equal_elim : regs1:regmap -> regs2:regmap -> Lemma
   (requires equal regs1 regs2)
   (ensures regs1 == regs2)
-  [SMTPat (equal regs1 regs2)]
+  [SMTPat (equal regs1 regs2)] = fun regs1 regs2 ->
+  assert (equal regs1 regs2 ==> (forall t. regs1 t == regs2 t));
+  admit() (* help needed *)
