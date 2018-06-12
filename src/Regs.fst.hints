@@ -1,5 +1,5 @@
 [
-  "š­¾\u0010Æ‰Ç›(!:cèÊUÝ",
+  "VF8M%)\u0019ÉDü!ÌMp)-",
   [
     [
       "Regs.lemma_regclasses_complete",
@@ -11,12 +11,13 @@
         "Prims_pretyping_ae567c2fb75be05905677af440075565",
         "equation_Prims.nat", "equation_Regs.n_reg_t", "equation_Regs.reg_t",
         "equation_Regs.regclasses", "int_typing",
+        "projection_inverse_BoxInt_proj_0",
         "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
         "refinement_interpretation_Regs_Tm_refine_64fde586cd61a9af199b0a72fdba45d1",
         "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
       ],
       0,
-      "622bd26669601c8715ad358e46b5f5fa"
+      "ef1fbad247b59ea4c12ad7c75d99355d"
     ],
     [
       "Regs.lemma_regclasses_complete",
@@ -30,7 +31,7 @@
         "haseqUtil_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
       ],
       0,
-      "ec24f675374395b2522007fe4851751f"
+      "4f4a14558224ff60994c6138117d9ea1"
     ],
     [
       "Regs.lemma_regclasses_derive",
@@ -39,7 +40,7 @@
       1,
       [ "@query" ],
       0,
-      "2d2f044a2457f75d7376187ee1776fec"
+      "19ccfb40056258141c53d702890f7ada"
     ],
     [
       "Regs.lemma_regclasses_derive",
@@ -53,7 +54,7 @@
         "haseqUtil_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
       ],
       0,
-      "762cfd4fbc38bda9d7b231a975dc739a"
+      "56aeb8be2e78a4a818259add945409ae"
     ],
     [
       "Regs.lemma_reglist_complete",
@@ -63,14 +64,15 @@
       [
         "@MaxIFuel_assumption", "@query",
         "Prims_pretyping_ae567c2fb75be05905677af440075565",
-        "equation_Prims.nat", "equation_Regs.reglist",
-        "equation_Regs.regtyp", "int_typing",
+        "equation_Prims.nat", "equation_Regs.n_reg_t", "equation_Regs.reg_t",
+        "equation_Regs.reglist", "int_inversion", "int_typing",
         "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
         "refinement_interpretation_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
-        "refinement_interpretation_Regs_Tm_refine_365de269f0ab0d8fcdc8733986aceb6d"
+        "refinement_interpretation_Regs_Tm_refine_365de269f0ab0d8fcdc8733986aceb6d",
+        "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
       ],
       0,
-      "95eaa3eb175775f5a9101e76bd765c08"
+      "844ba34136bb299e1c4a57a8a31a6f08"
     ],
     [
       "Regs.lemma_reglist_complete",
@@ -78,24 +80,25 @@
       2,
       1,
       [
-        "@MaxIFuel_assumption", "@query",
-        "Prims_pretyping_ae567c2fb75be05905677af440075565",
-        "assumption_Prims.HasEq_int", "equation_Prims.nat",
-        "equation_Regs.regtyp",
+        "@query", "assumption_Prims.HasEq_int", "equation_Prims.nat",
         "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
-        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2", "int_typing"
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2"
       ],
       0,
-      "0b828582bd89b1d4c49f296091e5a3e9"
+      "8abeb939bbcc4cf579cd7338ea78a793"
     ],
     [
       "Regs.lemma_reglist_derive",
       1,
       2,
       1,
-      [ "@query" ],
+      [
+        "@MaxIFuel_assumption", "@query", "equation_Prims.nat",
+        "refinement_interpretation_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
+        "refinement_interpretation_Regs_Tm_refine_dbd90603508ce983587c738d6b68872e"
+      ],
       0,
-      "a920bfb3862ad105bc2bf7f463e06309"
+      "c215f3c47606f3961253db1034422702"
     ],
     [
       "Regs.lemma_reglist_derive",
@@ -103,15 +106,12 @@
       2,
       1,
       [
-        "@MaxIFuel_assumption", "@query",
-        "Prims_pretyping_ae567c2fb75be05905677af440075565",
-        "assumption_Prims.HasEq_int", "equation_Prims.nat",
-        "equation_Regs.regtyp",
+        "@query", "assumption_Prims.HasEq_int", "equation_Prims.nat",
         "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
-        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2", "int_typing"
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2"
       ],
       0,
-      "a6a5ebaa0188f1787650d91db6b628e7"
+      "ce03427e8874d4a4107c17dba6110f41"
     ],
     [
       "Regs.lemma_equal1_intro",
@@ -123,7 +123,7 @@
         "equation_Regs.equal1"
       ],
       0,
-      "6e8cc36067976d02414cae8b0dc3a6ca"
+      "23604ed742f9c495e06dcc9699832bda"
     ],
     [
       "Regs.lemma_equal1_elim",
@@ -134,20 +134,20 @@
         "@MaxIFuel_assumption", "@query",
         "Prims_interpretation_Tm_arrow_9cb3c953faf527c316d427b2ce8bd81b",
         "Prims_pretyping_ae567c2fb75be05905677af440075565",
-        "Regs_interpretation_Tm_arrow_2a6aa10791b5aea4fe2df8e428d6f062",
-        "Regs_interpretation_Tm_arrow_edfd95d1b5d4d294dd877e539cd8463c",
+        "Regs_interpretation_Tm_arrow_8e29eab998a77e3ededb8740e5ab4de8",
+        "Regs_interpretation_Tm_arrow_fb05f6cb7e86dc7b0a38e7fc5ce37a5e",
         "assumption_FStar.FunctionalExtensionality.Extensionality",
         "equation_FStar.FunctionalExtensionality.efun", "equation_Prims.nat",
         "equation_Regs.equal1", "equation_Regs.n_reg_t",
         "equation_Regs.reg_t", "equation_Regs.regmap",
-        "equation_Regs.regtyp", "equation_Regs.regval", "int_inversion",
-        "int_typing",
+        "equation_Regs.regval", "int_inversion", "int_typing",
         "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
         "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
-        "typing_Regs.regtyp", "typing_Regs.regval"
+        "refinement_kinding_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
+        "typing_Regs.regval"
       ],
       0,
-      "d4248ad1b071e97589b6f5aabfe3795e"
+      "1b9872a4a8fea74f942fb1fe10fe3237"
     ],
     [
       "Regs.lemma_equal_intro",
@@ -156,10 +156,22 @@
       1,
       [
         "@query", "equation_Regs.equal", "equation_Regs.reg_t",
-        "l_quant_interp__1693", "lemma_Regs.lemma_equal1_intro"
+        "l_quant_interp__1717", "lemma_Regs.lemma_equal1_intro"
       ],
       0,
-      "308a5d5c118ae06f4cad78c6702b9c9a"
+      "cfa4c4bfed694175586cda58a2b8ba5f"
+    ],
+    [
+      "Regs.lemma_equal_elim",
+      1,
+      2,
+      1,
+      [
+        "@query", "equation_Regs.equal", "equation_Regs.reg_t",
+        "l_quant_interp__1717", "lemma_Regs.lemma_equal1_elim"
+      ],
+      0,
+      "eeb33d0dd2cfe1ab72eadcee90feb909"
     ]
   ]
 ]

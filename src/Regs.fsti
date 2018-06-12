@@ -3,7 +3,7 @@ module Regs
 open FStar.List
 open Util
 
-val n_reg_t : n:nat{0 < n}
+val n_reg_t : pos
 
 type reg_t = n:nat{n < n_reg_t}
 
@@ -18,15 +18,15 @@ let lemma_regclasses_derive : p:(reg_t -> Type0) -> Lemma
 	((forall t0. mem t0 regclasses ==> p t0) ==> (forall t. p t)) = fun _ ->
 	lemma_regclasses_complete ()
 
-val n_regtype : reg_t -> n:nat{0 < n}
+val n_regtype : reg_t -> pos
 
 unfold type regtyp (t:reg_t) = n:nat{n < n_regtype t}
 
 (* why [list (regtyp t)] does not work here? *)
-let reglist (t:reg_t) : list (regtyp t) = range (n_regtype t)
+let reglist (t:reg_t) : list (n:nat{n < n_regtype t}) = range (n_regtype t)
 
 let lemma_reglist_complete : t:reg_t -> Lemma
-	(forall r. mem r (reglist t)) = fun t ->
+	(forall (r:regtyp t). mem r (reglist t)) = fun t ->
 	lemma_range_complete (n_regtype t)
 
 let lemma_reglist_derive : #t:reg_t -> p:(regtyp t -> Type0) -> Lemma

@@ -18,4 +18,6 @@ let lemma_equal1_elim t regs1 regs2 = ()
 
 let lemma_equal_intro regs1 regs2 = ()
 
-let lemma_equal_elim regs1 regs2 = ()
+let lemma_equal_elim regs1 regs2 =
+	assert (equal regs1 regs2 ==> (forall t. regs1 t == regs2 t));
+	admit() (* help needed *)

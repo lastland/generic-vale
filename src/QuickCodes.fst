@@ -7,7 +7,7 @@ open FStar.List
 
 (** * Comparing [reglist] *)
 
-let rec regs_list_match (#t:reg_t) (regs: list (regtyp t)) (r0:regmap) (r1:regmap) : Type0 =
+let rec regs_list_match (#t:reg_t) (regs: list (n:nat{n < n_regtype t})) (r0:regmap) (r1:regmap) : Type0 =
 match regs with
 | [] -> True
 | r::regs' -> r0 t r == r1 t r /\ regs_list_match regs' r0 r1
@@ -18,7 +18,7 @@ let reglist_match (t:reg_t)(r0:regmap)(r1:regmap) : Type0 =
 
 (** * Lemmas about comparing [reglist] *)
 
-val lemma_regs_list_match : #t:reg_t -> regs:list (regtyp t) -> r0:regmap -> r1:regmap -> Lemma
+val lemma_regs_list_match : #t:reg_t -> regs:list (n:nat{n < n_regtype t}) -> r0:regmap -> r1:regmap -> Lemma
 	(regs_list_match regs r0 r1 ==>
 	 (forall (r:regtyp t). mem r regs ==> r0 t r == r1 t r))
 let rec lemma_regs_list_match #t regs r0 r1 = 
@@ -31,7 +31,7 @@ val lemma_reglist_match : t:reg_t -> r0:regmap -> r1:regmap -> Lemma
 	 r0 t == r1 t)
 let lemma_reglist_match t r0 r1 = 
 	lemma_regs_list_match (reglist t) r0 r1;
-	lemma_reglist_derive (fun r -> r0 t r == r1 t r);
+	lemma_reglist_derive #t (fun r -> r0 t r == r1 t r);
 	assert (reglist_match t r0 r1 ==> equal1 (r0 t) (r1 t))
 
 (** * Comparing [regclasses] *)
