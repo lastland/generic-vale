@@ -1,0 +1,165 @@
+[
+  "š­¾\u0010Æ‰Ç›(!:cèÊUÝ",
+  [
+    [
+      "Regs.lemma_regclasses_complete",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "equation_Prims.nat", "equation_Regs.n_reg_t", "equation_Regs.reg_t",
+        "equation_Regs.regclasses", "int_typing",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "refinement_interpretation_Regs_Tm_refine_64fde586cd61a9af199b0a72fdba45d1",
+        "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
+      ],
+      0,
+      "622bd26669601c8715ad358e46b5f5fa"
+    ],
+    [
+      "Regs.lemma_regclasses_complete",
+      2,
+      2,
+      1,
+      [
+        "@query", "assumption_Prims.HasEq_int", "equation_Prims.nat",
+        "equation_Regs.n_reg_t", "equation_Regs.reg_t",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqUtil_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
+      ],
+      0,
+      "ec24f675374395b2522007fe4851751f"
+    ],
+    [
+      "Regs.lemma_regclasses_derive",
+      1,
+      2,
+      1,
+      [ "@query" ],
+      0,
+      "2d2f044a2457f75d7376187ee1776fec"
+    ],
+    [
+      "Regs.lemma_regclasses_derive",
+      2,
+      2,
+      1,
+      [
+        "@query", "assumption_Prims.HasEq_int", "equation_Prims.nat",
+        "equation_Regs.n_reg_t", "equation_Regs.reg_t",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqUtil_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
+      ],
+      0,
+      "762cfd4fbc38bda9d7b231a975dc739a"
+    ],
+    [
+      "Regs.lemma_reglist_complete",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "equation_Prims.nat", "equation_Regs.reglist",
+        "equation_Regs.regtyp", "int_typing",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "refinement_interpretation_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
+        "refinement_interpretation_Regs_Tm_refine_365de269f0ab0d8fcdc8733986aceb6d"
+      ],
+      0,
+      "95eaa3eb175775f5a9101e76bd765c08"
+    ],
+    [
+      "Regs.lemma_reglist_complete",
+      2,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "assumption_Prims.HasEq_int", "equation_Prims.nat",
+        "equation_Regs.regtyp",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2", "int_typing"
+      ],
+      0,
+      "0b828582bd89b1d4c49f296091e5a3e9"
+    ],
+    [
+      "Regs.lemma_reglist_derive",
+      1,
+      2,
+      1,
+      [ "@query" ],
+      0,
+      "a920bfb3862ad105bc2bf7f463e06309"
+    ],
+    [
+      "Regs.lemma_reglist_derive",
+      2,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "assumption_Prims.HasEq_int", "equation_Prims.nat",
+        "equation_Regs.regtyp",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2", "int_typing"
+      ],
+      0,
+      "a6a5ebaa0188f1787650d91db6b628e7"
+    ],
+    [
+      "Regs.lemma_equal1_intro",
+      1,
+      2,
+      1,
+      [
+        "@query", "equation_FStar.FunctionalExtensionality.feq",
+        "equation_Regs.equal1"
+      ],
+      0,
+      "6e8cc36067976d02414cae8b0dc3a6ca"
+    ],
+    [
+      "Regs.lemma_equal1_elim",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "Prims_interpretation_Tm_arrow_9cb3c953faf527c316d427b2ce8bd81b",
+        "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "Regs_interpretation_Tm_arrow_2a6aa10791b5aea4fe2df8e428d6f062",
+        "Regs_interpretation_Tm_arrow_edfd95d1b5d4d294dd877e539cd8463c",
+        "assumption_FStar.FunctionalExtensionality.Extensionality",
+        "equation_FStar.FunctionalExtensionality.efun", "equation_Prims.nat",
+        "equation_Regs.equal1", "equation_Regs.n_reg_t",
+        "equation_Regs.reg_t", "equation_Regs.regmap",
+        "equation_Regs.regtyp", "equation_Regs.regval", "int_inversion",
+        "int_typing",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
+        "typing_Regs.regtyp", "typing_Regs.regval"
+      ],
+      0,
+      "d4248ad1b071e97589b6f5aabfe3795e"
+    ],
+    [
+      "Regs.lemma_equal_intro",
+      1,
+      2,
+      1,
+      [
+        "@query", "equation_Regs.equal", "equation_Regs.reg_t",
+        "l_quant_interp__1693", "lemma_Regs.lemma_equal1_intro"
+      ],
+      0,
+      "308a5d5c118ae06f4cad78c6702b9c9a"
+    ]
+  ]
+]

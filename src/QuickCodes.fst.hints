@@ -1,5 +1,5 @@
 [
-  "_d,\b„\u0007’\tõ\\ÎÖ\u0007\r©E",
+  "<g$=.@Ã-\u0013PgÐ\u0002akÌ",
   [
     [
       "QuickCodes.regs_list_match",
@@ -8,13 +8,92 @@
       1,
       [
         "@MaxIFuel_assumption", "@query",
-        "binder_x_888e8e5eca733c62ad7e0070025f18c9_4",
+        "binder_x_77028b6df250f1d5b91c48931ea5b8bb_1",
+        "binder_x_ae23aa41c967762442207128356d3ed3_0",
         "disc_equation_Prims.Cons", "disc_equation_Prims.Nil",
-        "equality_tok_Prims.LexTop@tok", "fuel_guarded_inversion_Prims.list",
+        "equality_tok_Prims.LexTop@tok", "equation_Prims.nat",
+        "equation_Regs.reg_t", "equation_Regs.regtyp",
+        "fuel_guarded_inversion_Prims.list", "int_inversion",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
         "subterm_ordering_Prims.Cons"
       ],
       0,
-      "38ab93028e33e3100bdffb4700360823"
+      "e30273fc1144e7a5ceaf81d31451a8d5"
+    ],
+    [
+      "QuickCodes.lemma_regs_list_match",
+      1,
+      2,
+      1,
+      [
+        "@query", "assumption_Prims.HasEq_int", "equation_Prims.nat",
+        "equation_Regs.regtyp",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2"
+      ],
+      0,
+      "89262aa9e75c31b8068faf6505040871"
+    ],
+    [
+      "QuickCodes.lemma_regs_list_match",
+      2,
+      2,
+      1,
+      [
+        "@MaxFuel_assumption", "@MaxIFuel_assumption",
+        "@fuel_correspondence_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "@fuel_correspondence_QuickCodes.regs_list_match.fuel_instrumented",
+        "@fuel_irrelevance_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "@fuel_irrelevance_QuickCodes.regs_list_match.fuel_instrumented",
+        "@query", "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "assumption_Prims.HasEq_int",
+        "binder_x_77028b6df250f1d5b91c48931ea5b8bb_1",
+        "binder_x_ae23aa41c967762442207128356d3ed3_0", "bool_inversion",
+        "constructor_distinct_Prims.Cons", "constructor_distinct_Prims.Nil",
+        "disc_equation_Prims.Cons", "disc_equation_Prims.Nil", "eq2-interp",
+        "equality_tok_Prims.LexTop@tok", "equation_Prims.eqtype",
+        "equation_Prims.nat", "equation_Regs.reg_t", "equation_Regs.regtyp",
+        "equation_with_fuel_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "equation_with_fuel_QuickCodes.regs_list_match.fuel_instrumented",
+        "fuel_guarded_inversion_Prims.list",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
+        "int_inversion", "l_and-interp", "primitive_Prims.op_Equality",
+        "projection_inverse_BoxBool_proj_0",
+        "projection_inverse_Prims.Cons_a",
+        "projection_inverse_Prims.Cons_hd",
+        "projection_inverse_Prims.Cons_tl", "projection_inverse_Prims.Nil_a",
+        "refinement_interpretation_Prims_Tm_refine_414d0a9f578ab0048252f8c8f552b99f",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "refinement_interpretation_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
+        "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
+        "subterm_ordering_Prims.Cons",
+        "token_correspondence_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "typing_FStar.List.Tot.Base.mem", "typing_Regs.n_reg_t",
+        "typing_Regs.regtyp"
+      ],
+      0,
+      "f793268a2adad67c041e6ea7e8508293"
+    ],
+    [
+      "QuickCodes.lemma_reglist_match",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "equation_Prims.nat", "equation_Regs.reg_t", "equation_Regs.regtyp",
+        "int_inversion", "lemma_Regs.lemma_equal1_elim",
+        "lemma_Regs.lemma_equal1_intro",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "refinement_interpretation_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
+        "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
+        "typing_Regs.n_reg_t"
+      ],
+      0,
+      "1a4c397f6bcf2602eb6994a7e80fdc78"
     ],
     [
       "QuickCodes.regs_class_match",
@@ -23,12 +102,99 @@
       1,
       [
         "@MaxIFuel_assumption", "@query",
-        "binder_x_493c370f6dc5c7a568b6f8abe9efd949_3",
+        "binder_x_493c370f6dc5c7a568b6f8abe9efd949_0",
         "disc_equation_Prims.Cons", "disc_equation_Prims.Nil",
-        "fuel_guarded_inversion_Prims.list", "subterm_ordering_Prims.Cons"
+        "equation_Regs.reg_t", "fuel_guarded_inversion_Prims.list",
+        "subterm_ordering_Prims.Cons"
       ],
       0,
-      "6608f81ce18cd184deb36e32c0eec33d"
+      "87da1d7b0ddd670fe466db0f21572f62"
+    ],
+    [
+      "QuickCodes.lemma_regs_class_match",
+      1,
+      2,
+      1,
+      [
+        "@query", "assumption_Prims.HasEq_int", "equation_Prims.nat",
+        "equation_Regs.reg_t",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqUtil_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
+      ],
+      0,
+      "5fb9b48517339c250f66e9e1a7832dab"
+    ],
+    [
+      "QuickCodes.lemma_regs_class_match",
+      2,
+      2,
+      1,
+      [
+        "@MaxFuel_assumption", "@MaxIFuel_assumption",
+        "@fuel_correspondence_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "@fuel_correspondence_QuickCodes.regs_class_match.fuel_instrumented",
+        "@fuel_irrelevance_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "@fuel_irrelevance_QuickCodes.regs_class_match.fuel_instrumented",
+        "@query", "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "assumption_Prims.HasEq_int",
+        "binder_x_493c370f6dc5c7a568b6f8abe9efd949_0", "bool_inversion",
+        "constructor_distinct_Prims.Cons", "constructor_distinct_Prims.Nil",
+        "disc_equation_Prims.Cons", "disc_equation_Prims.Nil",
+        "equation_Prims.eqtype", "equation_Prims.nat", "equation_Regs.reg_t",
+        "equation_with_fuel_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "equation_with_fuel_QuickCodes.regs_class_match.fuel_instrumented",
+        "fuel_guarded_inversion_Prims.list",
+        "function_token_typing_Regs.reg_t",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqUtil_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
+        "int_inversion", "l_and-interp", "primitive_Prims.op_Equality",
+        "projection_inverse_BoxBool_proj_0",
+        "projection_inverse_Prims.Cons_a",
+        "projection_inverse_Prims.Cons_hd",
+        "projection_inverse_Prims.Cons_tl", "projection_inverse_Prims.Nil_a",
+        "refinement_interpretation_Prims_Tm_refine_414d0a9f578ab0048252f8c8f552b99f",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
+        "subterm_ordering_Prims.Cons",
+        "token_correspondence_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "typing_FStar.List.Tot.Base.mem", "typing_Regs.n_reg_t"
+      ],
+      0,
+      "60c4061898fc351099a38f111803d3e1"
+    ],
+    [
+      "QuickCodes.lemma_regclasses_match",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "binder_x_12a9c772c37e07f39807b84411c67f92_0",
+        "binder_x_12a9c772c37e07f39807b84411c67f92_1", "equation_Prims.nat",
+        "equation_Regs.reg_t", "int_inversion",
+        "lemma_Regs.lemma_equal_elim", "lemma_Regs.lemma_equal_intro",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
+        "typing_Regs.n_reg_t"
+      ],
+      0,
+      "1cd5c0eb9b239443398481e3c9276747"
+    ],
+    [
+      "QuickCodes.va_state_match",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query", "eq2-interp",
+        "equation_State.state_eq", "fuel_guarded_inversion_State.state",
+        "l_and-interp", "lemma_Regs.lemma_equal_intro",
+        "proj_equation_State.Mkstate_regs",
+        "typing_State.__proj__Mkstate__item__regs"
+      ],
+      0,
+      "1f8952c131f90f6dc84ccd3de1ad5570"
     ]
   ]
 ]
