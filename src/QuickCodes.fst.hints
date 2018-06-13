@@ -1,5 +1,5 @@
 [
-  "éŠxBü \u0002–¢ô²»CYÇŒ",
+  "NþÊ(Ú\r„SÑ)\u001dŠgvÇÀ",
   [
     [
       "QuickCodes.regs_list_match",
@@ -8,22 +8,18 @@
       1,
       [
         "@MaxIFuel_assumption", "@query",
-        "Prims_pretyping_ae567c2fb75be05905677af440075565",
-        "binder_x_798c64e61817c25ffc04b56c71928109_1",
+        "binder_x_77028b6df250f1d5b91c48931ea5b8bb_1",
         "binder_x_ae23aa41c967762442207128356d3ed3_0",
         "disc_equation_Prims.Cons", "disc_equation_Prims.Nil",
         "equality_tok_Prims.LexTop@tok", "equation_Prims.nat",
-        "equation_Prims.pos", "equation_Regs.reg_t",
-        "fuel_guarded_inversion_Prims.list",
-        "function_token_typing_Regs.n_reg_t", "int_inversion",
+        "equation_Regs.reg_t", "equation_Regs.regtyp",
+        "fuel_guarded_inversion_Prims.list", "int_inversion",
         "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
-        "refinement_interpretation_Prims_Tm_refine_f048236b5f8051f83b495ea5eaa6127b",
-        "refinement_interpretation_QuickCodes_Tm_refine_e49d460e1d7cf76e7ff6e8330f3a86b4",
         "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
         "subterm_ordering_Prims.Cons"
       ],
       0,
-      "673c6fe6026d6332b87ef5e5bd7f1346"
+      "b395b7dd808e6e8581d8500a5aae71ed"
     ],
     [
       "QuickCodes.lemma_regs_list_match",
@@ -31,18 +27,13 @@
       2,
       1,
       [
-        "@MaxIFuel_assumption", "@query",
-        "Prims_pretyping_ae567c2fb75be05905677af440075565",
-        "assumption_Prims.HasEq_int", "equation_Prims.nat",
-        "equation_Prims.pos", "function_token_typing_Regs.n_reg_t",
+        "@query", "assumption_Prims.HasEq_int", "equation_Prims.nat",
+        "equation_Regs.regtyp",
         "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
-        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
-        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
-        "refinement_interpretation_Prims_Tm_refine_f048236b5f8051f83b495ea5eaa6127b",
-        "refinement_interpretation_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2"
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2"
       ],
       0,
-      "b1242c3a8d82437d2b9a28beca3ed51d"
+      "ee8386f6bc99f7a48e22493562f2aac2"
     ],
     [
       "QuickCodes.lemma_regs_list_match",
@@ -57,18 +48,19 @@
         "@fuel_irrelevance_QuickCodes.regs_list_match.fuel_instrumented",
         "@query", "Prims_pretyping_ae567c2fb75be05905677af440075565",
         "assumption_Prims.HasEq_int",
-        "binder_x_798c64e61817c25ffc04b56c71928109_1",
+        "binder_x_77028b6df250f1d5b91c48931ea5b8bb_1",
         "binder_x_ae23aa41c967762442207128356d3ed3_0", "bool_inversion",
         "constructor_distinct_Prims.Cons", "constructor_distinct_Prims.Nil",
         "disc_equation_Prims.Cons", "disc_equation_Prims.Nil", "eq2-interp",
         "equality_tok_Prims.LexTop@tok", "equation_Prims.eqtype",
         "equation_Prims.nat", "equation_Prims.pos", "equation_Regs.reg_t",
+        "equation_Regs.regtyp",
         "equation_with_fuel_FStar.List.Tot.Base.mem.fuel_instrumented",
         "equation_with_fuel_QuickCodes.regs_list_match.fuel_instrumented",
         "fuel_guarded_inversion_Prims.list",
         "function_token_typing_Regs.n_reg_t",
         "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
-        "haseqQuickCodes_Tm_refine_e49d460e1d7cf76e7ff6e8330f3a86b4",
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
         "int_inversion", "l_and-interp", "primitive_Prims.op_Equality",
         "projection_inverse_BoxBool_proj_0",
         "projection_inverse_Prims.Cons_a",
@@ -77,13 +69,14 @@
         "refinement_interpretation_Prims_Tm_refine_414d0a9f578ab0048252f8c8f552b99f",
         "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
         "refinement_interpretation_Prims_Tm_refine_f048236b5f8051f83b495ea5eaa6127b",
-        "refinement_interpretation_QuickCodes_Tm_refine_e49d460e1d7cf76e7ff6e8330f3a86b4",
+        "refinement_interpretation_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
         "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
-        "refinement_kinding_QuickCodes_Tm_refine_e49d460e1d7cf76e7ff6e8330f3a86b4",
-        "subterm_ordering_Prims.Cons", "typing_FStar.List.Tot.Base.mem"
+        "subterm_ordering_Prims.Cons",
+        "token_correspondence_FStar.List.Tot.Base.mem.fuel_instrumented",
+        "typing_FStar.List.Tot.Base.mem", "typing_Regs.regtyp"
       ],
       0,
-      "84d4a9c00931ac5ba0ccdd41075f5951"
+      "69eb094e3f6b3f04318d2ac93ee6a201"
     ],
     [
       "QuickCodes.lemma_reglist_match",
@@ -93,18 +86,17 @@
       [
         "@MaxIFuel_assumption", "@query",
         "Prims_pretyping_ae567c2fb75be05905677af440075565",
-        "equation_FStar.FunctionalExtensionality.feq", "equation_Prims.nat",
-        "equation_Prims.pos", "equation_Regs.equal1", "equation_Regs.reg_t",
-        "function_token_typing_Regs.n_reg_t", "int_inversion",
-        "lemma_Regs.lemma_equal1_elim",
+        "equation_Prims.nat", "equation_Prims.pos", "equation_Regs.reg_t",
+        "equation_Regs.regtyp", "function_token_typing_Regs.n_reg_t",
+        "int_inversion", "lemma_Regs.lemma_equal1_elim",
+        "lemma_Regs.lemma_equal1_intro",
         "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
         "refinement_interpretation_Prims_Tm_refine_f048236b5f8051f83b495ea5eaa6127b",
-        "refinement_interpretation_QuickCodes_Tm_refine_dbd90603508ce983587c738d6b68872e",
         "refinement_interpretation_Regs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
         "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
       ],
       0,
-      "8efa8fa6318bacd6dab24b0f91f60863"
+      "2c6e425d27f46887a32babd9a8291895"
     ],
     [
       "QuickCodes.regs_class_match",
@@ -119,7 +111,7 @@
         "subterm_ordering_Prims.Cons"
       ],
       0,
-      "e6704c772b7a364106a53cd7698b1434"
+      "19d52b42c1c7211e3b2641ef73b6d857"
     ],
     [
       "QuickCodes.lemma_regs_class_match",
@@ -133,7 +125,7 @@
         "haseqUtil_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
       ],
       0,
-      "d8cf457fdc665cef10c2c2c2a0ee4c6a"
+      "5d38ee9e0150bb49d59ff3935972de1e"
     ],
     [
       "QuickCodes.lemma_regs_class_match",
@@ -174,7 +166,7 @@
         "typing_FStar.List.Tot.Base.mem"
       ],
       0,
-      "b3872ef12614034fba207fb55491656e"
+      "1463914c25b90faf8e4cff8ecac0ecd4"
     ],
     [
       "QuickCodes.lemma_regclasses_match",
@@ -194,7 +186,7 @@
         "refinement_interpretation_Util_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98"
       ],
       0,
-      "07d958b681870273f6a53503d4176681"
+      "6965ad1d282238f96c4f250cfb600aed"
     ],
     [
       "QuickCodes.va_state_match",
@@ -209,7 +201,7 @@
         "typing_State.__proj__Mkstate__item__regs"
       ],
       0,
-      "c7b2554d23eaf5cda7ddfa823aec9a28"
+      "e5c864cb52c5fae0183b8f7b63f621bd"
     ]
   ]
 ]
