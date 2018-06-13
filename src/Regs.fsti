@@ -12,8 +12,8 @@ let regclasses : list reg_t = range n_reg_t
 
 let lemma_regclasses_complete : unit -> Lemma
   (forall (t:reg_t). mem t regclasses) = fun _ ->
-    lemma_range_complete n_reg_t;
-    assert (forall (t:reg_t). t < n_reg_t)
+    assert (forall (t:reg_t). t < n_reg_t);
+    FStar.Classical.forall_intro(lemma_range_complete n_reg_t)
 
 let lemma_regclasses_derive : p:(reg_t -> Type0) -> Lemma
   ((forall t0. mem t0 regclasses ==> p t0) ==> (forall t. p t)) = fun _ ->
@@ -28,7 +28,7 @@ let reglist (t:reg_t) : list (regtyp t) = range (n_regtype t)
 
 let lemma_reglist_complete : t:reg_t -> Lemma
   (forall (r:regtyp t). mem r (reglist t)) = fun t ->
-    lemma_range_complete (n_regtype t)
+    FStar.Classical.forall_intro(lemma_range_complete (n_regtype t))
 
 let lemma_reglist_derive : #t:reg_t -> p:(regtyp t -> Type0) -> Lemma
   ((forall r0. mem r0 (reglist t) ==> p r0) ==> (forall r. p r)) = fun #t p ->
