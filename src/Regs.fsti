@@ -39,6 +39,12 @@ val regval : reg_t -> Type0
 
 type regmap = t:reg_t -> regtyp t -> regval t
 
+let update_regmap (t:reg_t) (r:regtyp t) (v:regval t) (old:regmap): regmap =
+  (fun t' -> if t' = t then
+    (let f : regtyp t -> regval t =
+      fun r' -> if r' = r then v else (old t' r') in f)
+      else (old t'))
+
 let equal1 (#t:reg_t)(regs1:regtyp t -> regval t)(regs2:regtyp t -> regval t) : Type0 =
   feq regs1 regs2
 

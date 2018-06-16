@@ -1,0 +1,64 @@
+[
+  "ÄëVˆWŒ\u0014Xš«ªË/\u001eÍ;",
+  [
+    [
+      "Operand64.const64",
+      1,
+      2,
+      1,
+      [
+        "@query", "assumption_FStar.Seq.Base.seq__uu___haseq",
+        "assumption_Prims.HasEq_bool", "equation_FStar.BitVector.bv_t",
+        "equation_Types.nat64", "function_token_typing_Prims.bool",
+        "haseqFStar.BitVector_Tm_refine_a0cd7d06c5da6444b6b51b319febde8e"
+      ],
+      0,
+      "08f1a67689dd9c5e2224775a9c8cfe0e"
+    ],
+    [
+      "Operand64.gReg",
+      1,
+      2,
+      1,
+      [
+        "@query", "equation_Regs.n_reg_t", "projection_inverse_BoxInt_proj_0"
+      ],
+      0,
+      "f5d0a92b7c46fd2bdd954750a5b532a5"
+    ],
+    [
+      "Operand64.rsp",
+      1,
+      2,
+      1,
+      [
+        "@query", "equation_Operand64.gReg", "equation_Regs.n_regtype",
+        "projection_inverse_BoxInt_proj_0"
+      ],
+      0,
+      "3b7695293201cbf05a972aa2795961d9"
+    ],
+    [
+      "Operand64.operandReg64",
+      1,
+      2,
+      1,
+      [
+        "@MaxIFuel_assumption", "@query",
+        "Prims_pretyping_ae567c2fb75be05905677af440075565",
+        "assumption_Prims.HasEq_int", "equation_Operand64.gReg",
+        "equation_Prims.nat", "equation_Regs.n_reg_t", "equation_Regs.reg_t",
+        "equation_Regs.regtyp",
+        "haseqFStar.Seq.Base_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
+        "haseqPrims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d",
+        "haseqRegs_Tm_refine_1eb0e82cef5533f3f08b19e02d2bd8d2",
+        "int_inversion", "int_typing", "primitive_Prims.op_Equality",
+        "projection_inverse_BoxBool_proj_0",
+        "refinement_interpretation_FStar.Seq.Base_Tm_refine_5514fbe9e08dfda40f950a7b9f1b2b98",
+        "refinement_interpretation_Prims_Tm_refine_ba523126f67e00e7cd55f0b92f16681d"
+      ],
+      0,
+      "9677aef4e381944e2f9928b3f4ccace6"
+    ]
+  ]
+]
