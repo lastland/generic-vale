@@ -5,9 +5,8 @@ open Operand
 open State
 open Types
 
-type mReg: reg_t = 1
-
 let operandXmm : operand quad32 (regtyp mReg) = {
+  valid_operand     = (fun _ _ -> true);
   valid_dst_operand = (fun _ -> true); // I don't know. Is this right?
   check_operand     = (fun _ _ -> true);
   update_operand    = (fun op v -> s <-- get;
