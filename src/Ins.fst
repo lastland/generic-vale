@@ -5,7 +5,16 @@ open State
 open Operand
 open Types
 
-noeq type add64 't1 't2 = {
+(*
+let add64_seman (dst : t1) (src : t2) [|operand nat64 t1|] [|operand nat64 t2|] : st unit =
+    s <-- get;
+    let r = (eval dst s + eval src s) % pow2_64 in
+    update dst r
+
+[@(tac_postprocess tau)]
+*)
+
+type add64 't1 't2 = {
   dst: 't1;
   src: 't2;
   dst_operand: operand nat64 't1;
@@ -18,8 +27,8 @@ let eval_add64 i =
   let sum = (i.dst_operand.eval_operand i.dst s + i.src_operand.eval_operand i.src s) % pow2_64 in
   i.dst_operand.update_operand i.dst sum
 
-val add64_to_string : add64 't1 't2 -> string
-let add64_to_string _ = ""
+val add64_to_string : [|show t1, show t2|] -> add64 't1 't2 -> string
+let add64_to_string t = "addf64 "a ^ show t.dst ^ " " ^ show t.src
 
 let add64_ins (#t1:Type)(#t2:Type) : ins (add64 t1 t2) = {
   eval_ins = eval_add64;
